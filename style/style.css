@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+  height: calc(100vh - 130px);
+  object-position: center;
+}
+
+.case {
+  display: none;
+  background-color: black;
+}
+
+/* main */
+.img-main {
+  position: relative;
+}
+.main-icon1 {
+  position: absolute;
+  color: orange;
+  right: 20%;
+  top: 30%;
+  font-size: 20px;
+}
+.main-icon1 i {
+  position: relative;
+}
+.icon1-content {
+  position: absolute;
+  background-color: rgba(128, 128, 128, 0.418);
+  left: -900%;
+  height: 200px;
+  /* display: none; */
+  overflow-y: scroll;
+  text-align: center;
+  border-radius: 25px;
+  padding: 2px;
+}
+.icon1-content::-webkit-scrollbar {
+  display: none;
+}
+.icon1-content li h2 {
+  color: goldenrod;
+}
+.icon1-content li p {
+  color: white;
+  font-size: 13px;
+}
+
+/* main */
+
+/* case */
+.ekrankarti {
+  border: 3px solid rgba(255, 255, 0, 0.616);
+  width: 56%;
+  height: 21%;
+  position: absolute;
+  left: 13%;
+  top: 48%;
+  opacity: 0;
+  overflow-y: scroll;
+  cursor: pointer;
+  padding: 5px;
+  transition: 1s ease all;
+}
+.ekrankarti::-webkit-scrollbar {
+  display: none;
+}
+.ekrankarti:hover {
+  opacity: 1;
+  box-shadow: 1px 1px 5px 1px yellow;
+}
+.ekrankarti p {
+  display: none;
+  color: white;
+}
+.ekrankarti span {
+  color: red;
+}
+
+.case-img {
+  position: relative;
+}
+
+.ram {
+  border: 3px solid rgba(255, 255, 0, 0.616);
+  width: 4.5%;
+  height: 23%;
+  position: absolute;
+  left: 45%;
+  top: 26%;
+  opacity: 0;
+  overflow-y: scroll;
+  cursor: pointer;
+  padding: 5px;
+  transition: 1s ease all;
+}
+.ram:hover {
+  opacity: 1;
+  box-shadow: 1px 1px 5px 1px yellow;
+}
+.ram::-webkit-scrollbar {
+  display: none;
+}
+.ram p {
+  display: none;
+  color: white;
+}
+/* case */
