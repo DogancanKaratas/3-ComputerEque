@@ -53,3 +53,12 @@ ram.addEventListener("click", function () {
     ram.style.width = "4.5%";
   }
 });
+
+// icon
+const iconHome = document.querySelector(".icon-home");
+
+iconHome.addEventListener("click", function () {
+  main.style.display = "block";
+
+  caseElement.style.display = "none";
+});
