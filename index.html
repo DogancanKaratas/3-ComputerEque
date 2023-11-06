@@ -20,7 +20,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <nav class="navbar">
       <div class="flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" class="flex items-center icon-home">
           <img
@@ -59,12 +59,12 @@
         </button>
         <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
           <ul
-            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0"
           >
             <li>
               <a
                 href="#"
-                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                class="renk1 block py-2 pl-3 pr-4 md:p-0"
                 aria-current="page"
                 >Home</a
               >
@@ -73,7 +73,7 @@
               <button
                 id="dropdownNavbarLink"
                 data-dropdown-toggle="dropdownNavbar"
-                class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                class="renk2 flex items-center justify-between w-full py-2 pl-3 pr-4 md:p-0"
               >
                 Dropdown
                 <svg
@@ -140,23 +140,17 @@
               </div>
             </li>
             <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              <a href="#" class="renk3 block py-2 pl-3 pr-4 md:border-0 md:p-0"
                 >Case</a
               >
             </li>
             <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              <a href="#" class="renk4 block py-2 pl-3 pr-4 md:border-0 md:p-0"
                 >Monitor</a
               >
             </li>
             <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              <a href="#" class="renk5 block py-2 pl-3 pr-4 md:border-0 md:p-0"
                 >Contact</a
               >
             </li>
@@ -177,10 +171,10 @@
               <li><h2>What is the Case</h2></li>
               <li>
                 <p>
-                  A computer case is known as an enclosure or safe that houses the
-                  components inside a desktop computer. These cases protect the
-                  internal components of the computer from dust, dirt, moisture
-                  and physical damage, while at the same time
+                  A computer case is known as an enclosure or safe that houses
+                  the components inside a desktop computer. These cases protect
+                  the internal components of the computer from dust, dirt,
+                  moisture and physical damage, while at the same time
                 </p>
               </li>
             </ul>
@@ -195,15 +189,42 @@
             </button>
           </div>
         </div>
+        <div class="main-icon2">
+          <i class="fa-solid fa-circle-arrow-down"></i>
+          <div class="icon2-content">
+            <ul>
+              <li><h2>What is the Monitor</h2></li>
+              <li>
+                <p>
+                  A PC monitor, or computer monitor, is a screen used with a
+                  computer to display text, images, and videos. There are
+                  different types of monitors, including LCD, LED, OLED, and CRT
+                  monitors. They vary in size, resolution, and features, making
+                  them suitable for various tasks like gaming, graphic design,
+                  and office work. Monitors connect to a computer's graphics
+                  card and are essential for visual interaction with a computer.
+                </p>
+              </li>
+            </ul>
+            <button
+              class="btn2 relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800"
+            >
+              <span
+                class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-500 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
+              >
+                Read More
+              </span>
+            </button>
+          </div>
+        </div>
       </div>
-      
     </div>
     <div class="case">
       <div class="case-img">
         <img src="./img/casee1.png" alt="" />
         <div class="ekrankarti">
           <p>
-            <span>GPU:</span> Stands for Graphics Processing Unit and is a
+            <span>GPU:</span>Stands for Graphics Processing Unit and is a
             specialized electronic circuit designed to accelerate image and
             video processing. It is usually found in graphics cards and is used
             to render high-quality graphics for computers. It is also suitable
@@ -221,25 +242,141 @@
         </div>
         <div class="ram">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Consectetur, eveniet tenetur. Nihil sunt dolor at quibusdam placeat
-            obcaecati tenetur sit numquam esse alias? Dolore, soluta fuga?
-            Deleniti omnis blanditiis voluptates?
+            <span>RAM: </span>Or Random Access Memory, is a computer's temporary
+            data storage that significantly affects its performance. It provides
+            a high-speed workspace for the CPU to work with active data and
+            instructions. RAM is volatile, meaning it loses data when the
+            computer is powered off. More and faster RAM allows for smoother
+            multitasking and quicker data processing. It's a crucial component
+            for a computer's efficient operation.
           </p>
         </div>
         <div class="cpu">
-          <p></p>
+          <p>
+            <span>CPU: </span>(Central Processing Unit) is the processing unit
+            of computers and performs basic tasks such as instruction execution,
+            data processing, memory management and program flow control. Modern
+            computers usually have multi-core processors and CPUs can run at
+            different speeds. The choice of CPU can vary depending on the
+            intended use and budget.
+          </p>
         </div>
         <div class="fan">
-          <p></p>
+          <p>
+            <span>Fan: </span>İs a component in a computer that cools down
+            critical parts, such as the CPU and GPU, by moving air to prevent
+            overheating. These fans come in various types and sizes, with
+            options for speed control to balance cooling and noise levels.
+            Proper cooling is essential for maintaining system performance and
+            component longevity.
+          </p>
         </div>
         <div class="pcu">
-          <p></p>
+          <p>
+            <span>PSU: </span>İn the context of computers stands for "Power
+            Supply Unit." It's a vital component responsible for providing
+            electrical power to all the internal parts of a computer. The PSU
+            converts external electrical power from sources like wall outlets
+            into the necessary voltages for a computer's components. It
+            regulates voltage, comes in various wattage ratings, and varies in
+            efficiency. Choosing the right PSU is crucial for ensuring stable
+            power distribution and preventing potential hardware damage. It also
+            offers different connectors, comes in various form factors to fit
+            different computer cases, and can be modular to reduce cable clutter
+            and improve airflow within the case.
+          </p>
         </div>
       </div>
     </div>
-    <!-- <div class="monitor"></div>
-    <div class="mouse"></div>
+    <div class="monitor">
+      <div class="monitor-img">
+        <img src="./img/monitor.png" alt="" />
+        <div class="lcd">
+          <button
+            type="button"
+            class="mbtn1 text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+          >
+            LCD
+          </button>
+        </div>
+        <div class="lcd-txt">
+          <p>
+            The acronym LCD stands for "Liquid Crystal Display." An LCD is a
+            type of flat-panel display technology that is commonly used in
+            devices such as televisions, computer monitors, smartphones, and
+            digital watches. It works by using liquid crystals sandwiched
+            between two layers of transparent electrodes. These liquid crystals
+            can be manipulated to control the passage of light, creating images
+            and text on the screen. LCDs are known for their thin and
+            lightweight design, making them suitable for a wide range of
+            applications. They offer good image quality, low power consumption,
+            and are commonly used in various electronic devices to display
+            information and visuals. However, newer display technologies such as
+            OLED (Organic Light-Emitting Diode) have become increasingly popular
+            in recent years due to their advantages in terms of contrast, color
+            saturation, and flexibility.
+          </p>
+        </div>
+        <div class="led">
+          <button
+            type="button"
+            class="mbtn2 text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+          >
+            LED
+          </button>
+        </div>
+        <div class="led-txt">
+          <p>
+            LED stands for "Light Emitting Diode," which is a semiconductor
+            device that emits light when an electric current passes through it.
+            LEDs are energy-efficient, long-lasting, durable, and have a compact
+            size. They are used in various applications, including lighting,
+            displays, indicators, automotive lighting, backlighting, and
+            decorative lighting. LEDs have become popular due to their energy
+            efficiency and versatility.
+          </p>
+        </div>
+        <div class="oled">
+          <button
+            type="button"
+            class="mbtn3 text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+          >
+            OLED
+          </button>
+        </div>
+        <div class="oled-txt">
+          <p>
+            OLED, or Organic Light-Emitting Diode, is a display technology that
+            uses organic compounds to emit light when an electric current is
+            applied. It offers advantages like better contrast, faster response
+            times, thin and flexible screens, wider viewing angles, and energy
+            efficiency. OLEDs are commonly used in smartphones, TVs, and other
+            displays but can be susceptible to issues like image retention and
+            burn-in, which are areas of ongoing development and improvement in
+            OLED technology.
+          </p>
+        </div>
+        <div class="crt">
+          <button
+            type="button"
+            class="mbtn4 text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+          >
+            CRT
+          </button>
+        </div>
+        <div class="crt-txt"><p></p></div>
+        <div class="curved">
+          <button
+            type="button"
+            class="mbtn5 text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+          >
+            <p>CURVED</p>
+          </button>
+        </div>
+        <div class="curved-txt"><p></p></div>
+      </div>
+    </div>
+    <!-- <div class="mouse"></div>
     <div class="keyboard"></div>
     <div class="headphone"></div> -->
     <!-- base -->
@@ -247,27 +384,26 @@
     <!-- footer -->
 
     <footer
-      class="bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600"
+      class="footer bottom-0 left-0 z-20 w-full p-4 shadow md:flex md:items-center md:justify-between md:p-6"
     >
       <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
-        >© 2023
-        <a href="https://flowbite.com/" class="hover:underline border">DOM™</a>.
-        All Rights Reserved.
+        >© 2023 <a href="https://flowbite.com/" class="">DOM™</a>. All Rights
+        Reserved.
       </span>
       <ul
         class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
       >
         <li>
-          <a href="#" class="mr-4 hover:underline md:mr-6">About</a>
+          <a href="#" class="mr-4 renk1 md:mr-6">About</a>
         </li>
         <li>
-          <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+          <a href="#" class="mr-4 renk2 md:mr-6">Privacy Policy</a>
         </li>
         <li>
-          <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+          <a href="#" class="mr-4 renk3 md:mr-6">Licensing</a>
         </li>
         <li>
-          <a href="#" class="hover:underline">Contact</a>
+          <a href="#" class="renk4">Contact</a>
         </li>
       </ul>
     </footer>
